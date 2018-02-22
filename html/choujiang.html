@@ -1,0 +1,89 @@
+html：
+<div class="g-lottery-box">
+  <div class="g-lottery-img">
+    <a class="playbtn" href="javascript:;" title="开始抽奖"></a>
+  </div>
+</div>
+  
+ 
+css：
+*{margin: 0; padding: 0;}
+.g-lottery-box {
+  width: 400px;
+  height: 400px;
+  margin-left: 30px;
+  position: relative;
+  background: url(images/0.gif) no-repeat;
+  margin: 0 auto;
+}
+     
+.g-lottery-box .g-lottery-img {
+  width: 340px;
+  height: 340px;
+  position: relative;
+  background: url(images/1.png) no-repeat;
+  left: 30px;
+  top: 30px;
+}
+       
+.g-lottery-box #clik {
+  width: 186px;
+  height: 186px;
+  position: absolute;
+  top: 77px;
+  left: 77px;
+  background: url(images/2.png) no-repeat;
+}
+js：
+/* 注意引用的顺序
+ * <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>  
+ * <script src="js/jquery.rotate.min.js" type="text/javascript" charset="utf-8"></script>
+ * <script src="js/demo.js" type="text/javascript" charset="utf-8"></script>
+ *
+ * Creat By foodoir 2010-10-11
+ *
+ * */
+ 
+var raNum;
+//注意：要将raNum设置为全局变量，容易出错
+ 
+$(function() {
+  $('#clik').click(function() {
+    //
+    raNum = Math.random()*360;
+    $(this).rotate({
+      duration:3000,
+      angle:0,
+      animateTo:raNum+720+360,
+      callback:function(){
+        A();
+      }
+    });
+  });
+});
+ 
+function A(){
+   
+  if(0 < raNum && raNum <= 30){
+    alert("恭喜您抽到理财金2000元！");
+    return;
+  }else if(30 < raNum && raNum <= 90){
+    alert("谢谢参与~再来一次吧~");
+    return;
+  }else if(90 < raNum && raNum <= 150){
+    alert("恭喜您抽到理财金5200元！");
+    return;
+  }else if(150 < raNum && raNum <= 210){
+    alert("恭喜您获得100元京东E卡，将在次日以短信形式下发到您的手机上，请注意查收!");
+    return;
+  }else if(210 < raNum && raNum <= 270){
+    alert("谢谢参与~再来一次吧~");
+    return;
+  }else if(270 < raNum && raNum <= 330){
+    alert("恭喜您抽到理财金1000元！");
+    return;
+  }else if(330 < raNum && raNum <= 360){
+    alert("恭喜您抽到理财金2000元！");
+    return;
+  }
+}
