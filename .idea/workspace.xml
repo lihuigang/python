@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bfe94e-d9a4-4d61-9384-6fd3b02c5120" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/fact_flow_sdk_date.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/fact_flow_sdk_hour.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lihuigang.iml" afterPath="$PROJECT_DIR$/.idea/lihuigang.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/fact_flow_sdk_hour.py" afterPath="$PROJECT_DIR$/work/fact_flow_sdk_hour.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +16,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="fact_flow_sdk_date.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/fact_flow_sdk_date.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding>
+                <element signature="e#38#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="fact_flow_sdk_hour.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work/fact_flow_sdk_hour.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="114">
+              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -46,9 +66,11 @@
       <find>智能数据峰会</find>
       <find>&lt;script src=&quot;</find>
       <find>&quot;</find>
+      <find>','</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
+      <replace>\t</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -99,13 +121,14 @@
         <option value="$PROJECT_DIR$/user/BiLiDownload.py" />
         <option value="$PROJECT_DIR$/work/fact_flow_sdk_date.py" />
         <option value="$PROJECT_DIR$/work/fact_flow_sdk_hour.py" />
+        <option value="$PROJECT_DIR$/work/test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="323" />
-    <option name="y" value="108" />
-    <option name="width" value="1211" />
+    <option name="x" value="503" />
+    <option name="y" value="171" />
+    <option name="width" value="1337" />
     <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -124,6 +147,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -162,8 +187,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.fact_flow_sdk_hour">
+  <component name="RunManager" selected="Python.test">
     <configuration default="false" name="getMeiTuan" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,24 +228,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="lihuigang" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/others/getMeiTuan.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Firefox" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="lihuigang" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/user/Firefox.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -277,6 +282,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="lihuigang" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/fact_flow_sdk_hour.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="lihuigang" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -348,18 +371,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.getMeiTuan" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Firefox" />
-      <item index="2" class="java.lang.String" itemvalue="Python.source_info" />
-      <item index="3" class="java.lang.String" itemvalue="Python.BiLiDownload" />
-      <item index="4" class="java.lang.String" itemvalue="Python.fact_flow_sdk_hour" />
+      <item index="1" class="java.lang.String" itemvalue="Python.source_info" />
+      <item index="2" class="java.lang.String" itemvalue="Python.BiLiDownload" />
+      <item index="3" class="java.lang.String" itemvalue="Python.fact_flow_sdk_hour" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.fact_flow_sdk_hour" />
-        <item index="1" class="java.lang.String" itemvalue="Python.BiLiDownload" />
-        <item index="2" class="java.lang.String" itemvalue="Python.source_info" />
-        <item index="3" class="java.lang.String" itemvalue="Python.getMeiTuan" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Firefox" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.fact_flow_sdk_hour" />
+        <item index="2" class="java.lang.String" itemvalue="Python.BiLiDownload" />
+        <item index="3" class="java.lang.String" itemvalue="Python.source_info" />
+        <item index="4" class="java.lang.String" itemvalue="Python.getMeiTuan" />
       </list>
     </recent_temporary>
   </component>
@@ -380,13 +403,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="323" y="108" width="1211" height="788" extended-state="0" />
+    <frame x="503" y="171" width="1337" height="788" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27745664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1697831" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23546511" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -413,7 +436,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/num.py" />
     <entry file="file://$PROJECT_DIR$/user/test.py" />
     <entry file="file://$PROJECT_DIR$/user/test_1.py" />
     <entry file="file://$PROJECT_DIR$/digui.py" />
@@ -465,24 +487,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/fact_flow_sdk_date.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="e#38#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/work/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work/fact_flow_sdk_hour.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="114">
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding />
         </state>
       </provider>

@@ -2,7 +2,7 @@
 # coding=utf-8
 import sys
 
-
+rows=['1\t2\t3\t4\t5\t6\t7\t8\t9']
 def get_uniqkey(line):
     key = line[0] + "\t" + line[1] + "\t" + line[2] + "\t" + line[3] + "\t" + line[6] + "\t" + line[7] + "\t" + line[8]
     return key
@@ -13,7 +13,7 @@ def get_key(line):
 
 def get_dic(line):
     dict={}
-    values=['0','0']
+    values=['0\t0']
     for hour in range(1,25):
         key = line[0] + "\t" + line[1] + "\t" + line[2] + "\t" + line[3] + "\t" + str(hour) + "\t" + line[7]+ "\t" + line[8]
         dict[key]=values
@@ -28,8 +28,9 @@ def get_value(line):
 
 key=[]
 isfirst=1
-for row in sys.stdin:
+for row in rows:
     line = row.strip().split('\t')
+    print line
     if key != get_key(line):
         if isfirst!=1 :
             for key in dic:
