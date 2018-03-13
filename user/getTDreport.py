@@ -3,8 +3,6 @@ from urllib.request import urlopen
 import requests
 import re
 
-
-
 def getPagelist(num):
     html = urlopen("http://mi.talkingdata.com/reports.html?category=all&tag=all&page=" + str(num))
     text=html.read().decode('UTF-8')
