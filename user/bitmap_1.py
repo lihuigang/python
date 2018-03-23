@@ -37,11 +37,10 @@ class Bitmap(object):
 
 
 class BitmapCP():
-    def merge(self,A):
-        B=A[0]
-        for i in range(0,len(A[0])):
-            for j in range(0,len(A)):
-                B[i] = B[i] | A[j][i]
+    def merge(self,A,B):
+        if len(A) > 0:
+            for i in range(len(B)):
+                B[i] = B[i] | A[i]
         return B
 
     def inter(self,A):
@@ -78,7 +77,7 @@ class transform():
 
     def to_string(self,array):
         bitmap_string=','.join(str(i) for i in array)
-        return zlib.compress(bitmap_string,9)
+        return bitmap_string
 
     def to_bitmap(self,array,MAX):
         #MAX=20000000
@@ -91,18 +90,47 @@ if __name__ == '__main__':
     key="0000"
     array=[]
     A=transform()
+    B=BitmapCP()
+    imp_bitmap=[]
+    unimp_bitmap=[]
     for line in sys.stdin:
-        line=line.split("\t")
-        if key == "0000":
-            key=line[0]
-        if key == line[0]:
-            array.append(int(line[1]))
-        else:
-            bitmap_array=A.to_bitmap(array,int(line[2]))
-            print key+"\t"+A.to_string(bitmap_array)
+        line=line.replace("\n","").split("\t")
+        if line[-1] == "bitmap":
+            if key == "0000":
+                key=line[0]
+            if key == line[0]:
+                array.append(int(line[1]))
+            else:
+                bitmap_array=A.to_bitmap(array,int(line[2]))
+                print key+"\t"+A.to_string(bitmap_array)
+                array=[]
+                key = line[0]
+                array.append(int(line[1]))
+        if line[-1] == "merge":
+            if key == "0000":
+                key=line[0]
+            if key == line[0]:
+                imp_bitmap=B.merge(imp_bitmap,A.to_array(line[1]))
+                unimp_bitmap = B.merge(unimp_bitmap, A.to_array(line[2]))
+            else:
+                print key+"\t"+A.to_string(imp_bitmap)+"\t"+A.to_string(unimp_bitmap)
+                imp_bitmap = []
+                unimp_bitmap = []
+                key = line[0]
+                imp_bitmap = B.merge(imp_bitmap, A.to_array(line[1]))
+                unimp_bitmap = B.merge(unimp_bitmap, A.to_array(line[2]))
+        if line[-1] == "inter":
+            array.append(A.to_array(line[1]))
+            array.append(A.to_array(line[2]))
+            for i in B.user(B.inter(array)):
+                print line[0]+"\t"+str(i)
             array=[]
-            key = line[0]
-            array.append(int(line[1]))
-    bitmap_array = A.to_bitmap(array,int(line[2]))
-    print key + "\t" + A.to_string(bitmap_array)
+
+    if line[-1] == "bitmap":
+        bitmap_array = A.to_bitmap(array,int(line[2]))
+        print key + "\t" + A.to_string(bitmap_array)
+    if line[-1] == "merge":
+        imp_bitmap = B.merge(imp_bitmap, A.to_array(line[1]))
+        unimp_bitmap = B.merge(unimp_bitmap, A.to_array(line[2]))
+        print key + "\t" + A.to_string(imp_bitmap) + "\t" + A.to_string(unimp_bitmap)
 
